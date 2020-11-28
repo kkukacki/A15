@@ -20,7 +20,8 @@ a:focus, a:hover {
 }
 /* the styles for the header */
 header {
-	padding: 1.5em 0 2em 0;
+	padding-left:0.105%;
+	padding-right: 0.105%
 	border-bottom: 3px solid #931420;
 	background-image: -moz-linear-gradient(
 	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
@@ -55,10 +56,10 @@ header img {
 }
 #nav_menu ul li {
 	float: left;
+	width: 13.334%
 }
 #nav_menu ul li a {
     display: block;
-    width: 160px;
     text-align: center;
     padding: 1em 0;
     text-decoration: none;
@@ -86,23 +87,25 @@ header img {
     display: block;
 }
 /* the styles for the main content */
+@media only screen and (max-width: 959px){
 main {
 	clear: left;
 }
 /* the styles for the section */
 section {
-	width: 525px;
+	width: 54.6875%;
 	float: right;
-	padding: 0 20px 20px 20px;
-}
+	padding-right: 2.84%;
+	padding-left: 2.84%
+		
 section h1 {
-	font-size: 150%;
+	font-size: 135%;
 	padding: .5em 0 .25em 0;
 	margin: 0;
 }
 section h2 {
 	color: #800000;
-	font-size: 130%;
+	font-size: 120%;
 	padding: .5em 0 .25em 0;
 }
 section p {
@@ -119,6 +122,7 @@ section ul {
 section li {
 	padding-bottom: .35em;
 }
+	}
 
 /* the styles for the article */
 article {
@@ -138,6 +142,8 @@ article img {
 	margin: .5em 0 1em 1em;
 	border: 1px solid black;
 	transition: 3s;
+	max-width: 40%
+	min-width: 150px;
 }
 article img:hover {
 	transform-origin: left top;
@@ -186,7 +192,7 @@ th:nth-child(3) {
 
 /* the styles for the aside */
 aside {
-	width: 215px;
+	width: 22.3959%;
 	float: right;
 	padding: 0 0 20px 20px;
 }
