@@ -19,9 +19,14 @@ a:focus, a:hover {
 	font-style: italic;
 }
 /* the styles for the header */
+@media only screen and (max-width: 767px){
+	header img{
+		float: none;
+	}
 header {
 	padding-left:0.105%;
 	padding-right: 0.105%
+	text-align: center;
 	border-bottom: 3px solid #931420;
 	background-image: -moz-linear-gradient(
 	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
@@ -31,6 +36,7 @@ header {
 	    30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 80%, #f6bb73 100%);
 	background-image: linear-gradient(
 	    30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 80%, #f6bb73 100%);
+}
 }
 header h2 {
 	font-size: 175%;
